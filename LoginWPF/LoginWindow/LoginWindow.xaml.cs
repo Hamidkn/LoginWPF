@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Login.DataLayer.UnitOfWork;
 using System.Windows.Forms;
+using LoginDataLayer;
+using Application = System.Windows.Application;
 using MessageBox = System.Windows.MessageBox;
 
 namespace LoginWPF.LoginWindow
@@ -23,6 +25,9 @@ namespace LoginWPF.LoginWindow
     public partial class LoginWindow : Window
     {
         private bool IsEdit = false;
+        private bool IsActive = false;
+        private LoginWindow _loginwindow;
+
         public LoginWindow()
         {
             InitializeComponent();
@@ -43,17 +48,47 @@ namespace LoginWPF.LoginWindow
                 }
                 else
                 {
-                    if (datset.LoginRepository.Get(l => l.UserName == txtusername.Text && l.PassWord == txtpassword.Text).Any())
+                    if (datset.LoginRepository.Get(log => log.UserName == txtusername.Text && log.PassWord == txtpassword.Text).Any())
+                    { 
+                        Application.Current.MainWindow.Show();
+                        
+                    }
+                    else if (datset.SignupRepository.Get(s => s.Username == txtusername.Text && s.Password ==txtpassword.Text).Any())
                     {
-                        DialogResult = true;
+                        Application.Current.MainWindow.Show();
                     }
                     else
                     {
                         MessageBox.Show("This username is not valid. \n" +
-                                        "For signing up use signup form");
+                                        "For signing up use signup form!");
                     }
                 }
             }
+        }
+
+        private void btnSignup_Click(object sender, RoutedEventArgs e)
+        {
+            using (Repository db = new Repository())
+            {
+                SignUp newlistSignUp = new SignUp();
+                newlistSignUp.FullName = txtFullname.Text;
+                newlistSignUp.Email = txtemail.Text;
+                newlistSignUp.Username = txtusernamesignup.Text;
+                newlistSignUp.Password = txtpasswordsignup.Text;
+                newlistSignUp.LoginId +=1 ;
+                db.SignupRepository.Insert(newlistSignUp);
+                db.Save();
+                MessageBox.Show("The user is added successfully.");
+                Clear();
+            }
+        }
+
+        private void Clear()
+        {
+            txtFullname.Clear();
+            txtemail.Clear();
+            txtusernamesignup.Clear();
+            txtpasswordsignup.Clear();
         }
     }
 }

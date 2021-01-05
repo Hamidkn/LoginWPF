@@ -27,8 +27,14 @@ namespace LoginWPF
             InitializeComponent();
             _loginWindow = new LoginWindow.LoginWindow();
             DataContext = _loginWindow;
-            
+            this.Hide();
             _loginWindow.Show();
+
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            _loginWindow.Hide();
         }
     }
 }

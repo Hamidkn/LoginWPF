@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LoginWPF.LoginWindow"
         mc:Ignorable="d"
-        Title="LoginWindow" Height="479.562" Width="800" FontFamily="Tahoma">
-    <Grid>
+        Title="LoginWindow" Height="448.562" Width="765" FontFamily="Tahoma">
+    <Grid Background="Gray">
         <Label Content="Welcome to application" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.489,0.348" Margin="300,43,0,0" Height="34" Width="189" FontFamily="Tahoma" FontSize="16"/>
         <TextBox x:Name="txtusername" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" VerticalAlignment="Top" Width="169" Margin="149,153,0,0"/>
         <Label x:Name="labelusername" Content="Username :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="61,153,0,0" Width="83" FontSize="14"/>
@@ -34,10 +34,10 @@
                 </TransformGroup>
             </GridSplitter.RenderTransform>
         </GridSplitter>
-        <TextBox x:Name="txtFullname" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" VerticalAlignment="Top" Width="169" Margin="494,153,0,0"/>
-        <Label x:Name="labelfullname" Content="Fullname :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="406,153,0,0" Width="83" FontSize="14"/>
-        <TextBox x:Name="txtemail" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" VerticalAlignment="Top" Width="169" Margin="494,197,0,0"/>
-        <Label x:Name="labelemail" Content="Email :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="406,197,0,0" Width="83" FontSize="14"/>
+        <TextBox x:Name="txtFullname" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" VerticalAlignment="Top" Width="169" Margin="500,153,0,0"/>
+        <Label x:Name="labelfullname" Content="Fullname :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="412,153,0,0" Width="83" FontSize="14"/>
+        <TextBox x:Name="txtemail" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" VerticalAlignment="Top" Width="169" Margin="500,197,0,0"/>
+        <Label x:Name="labelemail" Content="Email :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="412,197,0,0" Width="83" FontSize="14"/>
         <Label Content="Signup" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.489,0.348" Margin="409,104,0,0" Height="34" Width="189" FontFamily="Tahoma" FontSize="16"/>
         <GridSplitter HorizontalAlignment="Left" Height="260" VerticalAlignment="Top" Width="5" Margin="540,12,0,0" RenderTransformOrigin="0.5,0.5">
             <GridSplitter.RenderTransform>
@@ -49,11 +49,11 @@
                 </TransformGroup>
             </GridSplitter.RenderTransform>
         </GridSplitter>
-        <TextBox x:Name="txtusernamesignup" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" VerticalAlignment="Top" Width="169" Margin="494,243,0,0"/>
-        <Label x:Name="labelusernamesignup" Content="Username :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="406,243,0,0" Width="83" FontSize="14"/>
-        <TextBox x:Name="txtpasswordsignup" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" VerticalAlignment="Top" Width="169" Margin="494,287,0,0"/>
-        <Label x:Name="labelpasswordsignup" Content="Password :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="406,287,0,0" Width="83" FontSize="14"/>
-        <Button x:Name="btnSignup" Content="Signup" HorizontalAlignment="Left" VerticalAlignment="Top" Width="101" Margin="494,345,0,0" Height="31"/>
+        <TextBox x:Name="txtusernamesignup" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" VerticalAlignment="Top" Width="169" Margin="500,243,0,0"/>
+        <Label x:Name="labelusernamesignup" Content="Username :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="412,243,0,0" Width="83" FontSize="14"/>
+        <TextBox x:Name="txtpasswordsignup" HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" VerticalAlignment="Top" Width="169" Margin="500,287,0,0"/>
+        <Label x:Name="labelpasswordsignup" Content="Password :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="412,287,0,0" Width="83" FontSize="14"/>
+        <Button x:Name="btnSignup" Content="Signup" HorizontalAlignment="Left" VerticalAlignment="Top" Width="101" Margin="500,345,0,0" Height="31" Click="btnSignup_Click"/>
 
     </Grid>
 </Window>
