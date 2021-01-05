@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginWPF.App", "LoginWPF\LoginWPF.App.csproj", "{FE1D4B52-54E9-468F-B79A-94A2B748CCD3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Login.DataLayer", "Login.DataLayer\Login.DataLayer.csproj", "{C80FAEE8-DE6D-46B8-877E-5A89E2829116}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginDataLayer", "LoginDataLayer\LoginDataLayer.csproj", "{78180312-AD22-48ED-B481-50DA8831AA9A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{FE1D4B52-54E9-468F-B79A-94A2B748CCD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE1D4B52-54E9-468F-B79A-94A2B748CCD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE1D4B52-54E9-468F-B79A-94A2B748CCD3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C80FAEE8-DE6D-46B8-877E-5A89E2829116}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C80FAEE8-DE6D-46B8-877E-5A89E2829116}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C80FAEE8-DE6D-46B8-877E-5A89E2829116}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C80FAEE8-DE6D-46B8-877E-5A89E2829116}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78180312-AD22-48ED-B481-50DA8831AA9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78180312-AD22-48ED-B481-50DA8831AA9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78180312-AD22-48ED-B481-50DA8831AA9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78180312-AD22-48ED-B481-50DA8831AA9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

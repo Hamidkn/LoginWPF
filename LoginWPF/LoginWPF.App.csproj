@@ -126,13 +126,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Login.DataLayer\Login.DataLayer.csproj">
-      <Project>{c80faee8-de6d-46b8-877e-5a89e2829116}</Project>
-      <Name>Login.DataLayer</Name>
-    </ProjectReference>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
+    <ProjectReference Include="..\LoginDataLayer\LoginDataLayer.csproj">
+      <Project>{78180312-ad22-48ed-b481-50da8831aa9a}</Project>
+      <Name>LoginDataLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

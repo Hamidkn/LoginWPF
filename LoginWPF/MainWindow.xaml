@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LoginWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
-        
+        <Label Content="Welcome" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="299,133,0,0" Height="87" Width="377" FontFamily="Tahoma" FontSize="48"/>
     </Grid>
 </Window>
